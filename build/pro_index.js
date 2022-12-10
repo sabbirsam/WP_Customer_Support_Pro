@@ -16,10 +16,10 @@ __webpack_require__.r(__webpack_exports__);
 
 const ProApp = () => {
   let current_page = window.location.search;
-  if (current_page === '?page=wcs_setting') {
+  if (current_page === '?page=wcs_documentation') {
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      id: "wcs_setting"
-    }, "Setting page showing frpm pro plugin");
+      id: "wcs_documentation"
+    }, "Documentation page showing from pro plugin");
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProApp);
@@ -130,8 +130,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let current_page = window.location.search;
-if (current_page === '?page=wcs_setting') {
-  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_ProApp__WEBPACK_IMPORTED_MODULE_1__["default"], null), document.getElementById('wcs_setting'));
+if (current_page === '?page=wcs_documentation') {
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_ProApp__WEBPACK_IMPORTED_MODULE_1__["default"], null), document.getElementById('wcs_documentation'));
 }
 }();
 /******/ })()

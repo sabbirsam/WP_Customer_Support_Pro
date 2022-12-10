@@ -133,7 +133,13 @@ class WCS_Pro_React_Rest_Route{
 }
 
 /**
- * SELECT `staff_id`, `status`, `date_created` FROM `wp_wcs_tickets` WHERE `status` = 2 OR `status` = 3; 
- * SELECT wp_users.user_login, wp_wcs_tickets.staff_id, wp_wcs_tickets.status, wp_wcs_tickets.date_created from wp_users JOIN wp_wcs_tickets on wp_users.ID = wp_wcs_tickets.staff_id;
+ * 
  * SELECT wp_users.ID, wp_users.user_login, wp_wcs_tickets.staff_id, wp_wcs_tickets.id, wp_wcs_tickets.status, wp_wcs_tickets.date_created from wp_users JOIN wp_wcs_tickets on wp_users.ID = wp_wcs_tickets.staff_id;
+ * 
+ * SELECT wp_users.ID, wp_users.user_login, wp_wcs_tickets.staff_id, wp_wcs_tickets.id, wp_wcs_tickets.status, wp_wcs_tickets.date_created from wp_users JOIN wp_wcs_tickets on wp_users.ID = wp_wcs_tickets.staff_id WHERE `date_created` > DATE_SUB(NOW(), INTERVAL 1 WEEK);
+ * 
+
+ * 
+ * 
+ * SELECT wp_users.ID, wp_users.user_login, wp_wcs_tickets.staff_id, wp_wcs_tickets.id, wp_wcs_tickets.status, wp_wcs_tickets.date_created from wp_users JOIN wp_wcs_tickets on wp_users.ID = wp_wcs_tickets.staff_id WHERE YEARWEEK(`date_created`) = YEARWEEK(NOW());
  */
